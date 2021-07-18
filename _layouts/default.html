@@ -14,12 +14,14 @@
   <body>
     <div class="wrapper">
       <header>
+        <!-- change the title here or update it on GitHub -->
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
         {% if site.logo %}
+          <!-- place link to site logo here -->
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-
+          <!-- changing the description on GitHub will update the description here -->
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% if site.github.is_project_page %}
